@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Final</title>
+<style>
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:Arial;
+  background:#0f172a;
+  color:white;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<div style="max-width:500px;font-size:22px" id="text"></div>
+
+<script>
+let msg=`💖 Okay listen...
+
+You passed all the games 😏
+
+Just wanted to say that I'll be coming on 11th:
+
+I love you thangam mata kammali ane ekai me.
+
+Ummmmmmmmmmmmaaaaaaaaaaaa 😂❤️`;
+
+let i=0;
+function type(){
+  if(i<msg.length){
+    document.getElementById("text").innerHTML+=msg[i];
+    i++;
+    setTimeout(type,50);
+  }
+}
+type();
+</script>
+
+</body>
+</html>
