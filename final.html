@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Final</title>
+<meta charset="UTF-8">
+<title>Final 💖</title>
+
 <style>
 body{
   height:100vh;
+  margin:0;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -12,16 +15,23 @@ body{
   background:#0f172a;
   color:white;
   text-align:center;
+  padding:20px;
+}
+
+#text{
+  max-width:500px;
+  font-size:22px;
+  white-space:pre-line;
 }
 </style>
 </head>
 
 <body>
 
-<div style="max-width:500px;font-size:22px" id="text"></div>
+<div id="text"></div>
 
 <script>
-let msg=`💖 Okay listen...
+let msg = `💖 Okay listen...
 
 You passed all the games 😏
 
@@ -31,14 +41,19 @@ I love you thangam mata kammali ane ekai me.
 
 Ummmmmmmmmmmmaaaaaaaaaaaa 😂❤️`;
 
-let i=0;
+let i = 0;
+let speed = 50;
+
 function type(){
-  if(i<msg.length){
-    document.getElementById("text").innerHTML+=msg[i];
+  const box = document.getElementById("text");
+
+  if(i < msg.length){
+    box.innerHTML += msg.charAt(i);
     i++;
-    setTimeout(type,50);
+    setTimeout(type, speed);
   }
 }
+
 type();
 </script>
 
