@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Game 2</title>
+<meta charset="UTF-8">
+<title>Game 2 💖</title>
+
 <style>
 body{
   height:100vh;
+  margin:0;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   font-family:Arial;
   background:#fff0f5;
+  text-align:center;
 }
-button{padding:10px;border:none;border-radius:10px;margin:5px;}
+
+button{
+  padding:12px 18px;
+  border:none;
+  border-radius:12px;
+  margin:8px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+button:hover{
+  transform: scale(1.05);
+}
+
+h2{
+  color:#d63384;
+}
 </style>
 </head>
 
@@ -20,7 +40,7 @@ button{padding:10px;border:none;border-radius:10px;margin:5px;}
 
 <h2>Quick Game 😏</h2>
 
-<p>Who is more Stronger you or me?</p>
+<p>Who is more stronger, you or me?</p>
 
 <button onclick="next()">Me ❤️</button>
 <button onclick="next()">Me 😏</button>
@@ -30,11 +50,12 @@ button{padding:10px;border:none;border-radius:10px;margin:5px;}
 <p>Will you stay with me forever?</p>
 
 <button onclick="next()">Yes 💖</button>
-<button onclick="next()">Yes Baby 😂</button>
+<button onclick="next()">Yes baby 😂</button>
 
 <script>
 function next(){
-  window.location.href="final.html";
+  // goes to your existing final page
+  window.location.href = "final.html";
 }
 </script>
 
